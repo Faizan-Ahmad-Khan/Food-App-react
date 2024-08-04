@@ -1,8 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header-container {
   background-color: #f8f9fa;
-  padding: 10px 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 13px 19px;
+  box-shadow: 0 4px 8px rgba(167, 98, 98, 0.1);
 }
 
 .nav {
@@ -11,32 +16,24 @@
   align-items: center;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+.logo img {
+  width: 100px;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  list-style-type: none;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #000;
   font-size: 18px;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: green;
-}
-
-.nav-links a li {
-  list-style: none;
-}
-
-img {
-  width: 80px;
-  border-radius: 50%;
 }

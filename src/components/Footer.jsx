@@ -1,17 +1,17 @@
-import facebook from "../assets/icons8-facebook-32.png"
-import instagram from "../assets/icons8-instagram-32.png"
-import twitter from "../assets/icons8-twitter-32.png"
+import facebook from "../assets/facebook.png"
+import instagram from "../assets/instagram.png"
+import twitter from "../assets/twitter.png"
 import "./Footer.css"
 
 function Footer() {
   return (
     <div className='footer-container'>
         <div className="footer-img">
-        <img src={facebook} alt='facebook-img' style={{width:"50px"}}/>
-        <img src={instagram} alt="insta-img"  style={{width:"50px"}}/>
-        <img src={twitter} alt="twitter-img"  style={{width:"50px"}}/>
+        <a href="https://www.facebook.com"><img src={facebook} alt='facebook-img' style={{width:"40px"}}/></a>
+        <a href="https://www.instagram.com"><img src={instagram} alt="insta-img"  style={{width:"40px"}}/></a>
+        <a href="https://www.twitter.com"><img src={twitter} alt="twitter-img"  style={{width:"40px"}}/></a>
         </div>
-        <p>All rights reserved 2024.</p>
+        <p>Copyright &copy; 2024.All rights reserved. </p>
     </div>
 
   )

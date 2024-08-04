@@ -1,22 +1,24 @@
 import React from 'react';
-import './Header.css'; // Import the CSS file
-import "./Header.css"
+import './Header.css';
+import logo from "../assets/logo.png"
 
 function Header() {
   return (
-    <div className="header-container">
+    <header className="header-container">
       <nav className="nav">
         <div className="logo">
-          <a href=""><img src="src\assets\logo.jpg" alt="not found"/></a>
+          <a href="/">
+            <img src={logo} alt="Logo" style={{height:"50px"}} />
+          </a>
         </div>
-        <div className="nav-links">
-          <a href=""><li>HOME</li></a>
-          <a href=""><li>ABOUT</li></a>
-          <a href=""><li>FOOD</li></a>
-          <a href=""><li>CONTACT</li></a>
-        </div>
+        <ul className="nav-links">
+          <li><a href="/">HOME</a></li>
+          <li><a href="/">ABOUT</a></li>
+          <li><a href="/">FOOD</a></li>
+          <li><a href="/">CONTACT</a></li>
+        </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 
